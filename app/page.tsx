@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#00674F]">
       {/* FIXED HEADER */}
       <header className="fixed top-0 w-full z-50 bg-[#00674F] border-b border-emerald-800/50 flex items-center justify-between px-6 sm:px-8 h-[60px] shadow-sm">
         <div className="flex items-center gap-3">

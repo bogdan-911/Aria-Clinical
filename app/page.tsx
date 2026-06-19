@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-[#00674F]">
+    <div className="min-h-[100dvh] bg-[#00674F] flex flex-col">
       {/* FIXED HEADER */}
       <header className="fixed top-0 w-full z-50 bg-[#00674F] border-b border-emerald-800/50 flex items-center justify-between px-6 sm:px-8 h-[60px] shadow-sm">
         <div className="flex items-center gap-3">
@@ -17,25 +17,25 @@ export default function Page() {
         </nav>
       </header>
 
-      <main className="pt-[60px] bg-[#00674F]">
+      <main className="pt-[60px] bg-[#00674F] flex-grow">
         {/* SECTION 1: THE ABOVE-THE-FOLD HOOK (Hero Section) */}
-        <section className="bg-[#00674F] text-white pt-[80px] pb-[90px] h-[590px] px-6 sm:px-8 flex flex-col justify-center text-center">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] font-semibold mb-3 sm:mb-4 opacity-80">
+        <section className="bg-[#00674F] text-white pt-[80px] pb-[90px] md:pt-32 md:pb-32 lg:pt-40 lg:pb-40 h-[590px] md:h-auto px-6 sm:px-8 flex flex-col justify-center text-center">
+          <div className="max-w-4xl lg:max-w-5xl mx-auto">
+            <p className="text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.3em] font-semibold mb-3 sm:mb-4 opacity-80">
             </p>
             
-            <h1 className="text-[32px] font-bold leading-tight mb-4 sm:mb-6 pt-0 w-full max-w-[326px] mx-auto">
+            <h1 className="text-[32px] md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 pt-0 w-full max-w-[326px] md:max-w-3xl lg:max-w-4xl mx-auto">
               Stop Wasting Clinic Chair Time on Unqualified Enquiries
             </h1>
             
-            <p className="text-base opacity-90 pl-0 pt-[10px] pb-[10px] w-full max-w-[300px] mx-auto mb-6 sm:mb-8 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl opacity-90 pl-0 pt-[10px] pb-[10px] w-full max-w-[300px] md:max-w-2xl lg:max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
               We install 24/7 AI-driven patient intake systems for premium clinics by filtering out tyre-kickers and converting high-value private enquiries directly into booked consultations without overloading your front desk.
             </p>
             
-            <div className="mt-4 flex justify-center">
+            <div className="mt-4 md:mt-8 flex justify-center">
               <a 
                 href="#demo"
-                className="inline-block bg-white text-[#00674F] font-bold uppercase tracking-tighter hover:bg-gray-100 transition-colors text-[16px] px-[30px] py-[18px] rounded-[12px] m-0"
+                className="inline-block bg-white text-[#00674F] font-bold uppercase tracking-tighter hover:bg-gray-100 transition-colors text-[16px] md:text-lg px-[30px] md:px-10 py-[18px] md:py-5 rounded-[12px] m-0"
               >
                  Watch the AI Demo 
               </a>
@@ -44,19 +44,19 @@ export default function Page() {
         </section>
 
         {/* SECTION 2: THE VIDEO ASSET (The Proof) */}
-        <section id="demo" className="scroll-mt-[60px] bg-white pt-16 pb-[90px] px-6 sm:px-8 border-b border-gray-100">
-          <div className="max-w-5xl mx-auto flex flex-col md:grid md:grid-cols-5 gap-8 items-center">
+        <section id="demo" className="scroll-mt-[60px] bg-white pt-16 md:pt-32 pb-[90px] md:pb-32 lg:pt-40 lg:pb-40 px-6 sm:px-8 border-b border-gray-100">
+          <div className="max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-5 gap-8 items-center">
             <div className="md:col-span-2 text-center md:text-left">
-              <h2 className="text-[32px] font-bold mb-3 sm:mb-4 text-black text-balance leading-tight">
+              <h2 className="text-[32px] md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 text-black text-balance leading-tight">
                 Real-Time Qualification
               </h2>
-              <p className="text-[16px] text-black pt-[10px] pb-[10px] px-[10px] leading-relaxed text-balance">
+              <p className="text-[16px] md:text-lg lg:text-xl text-black pt-[10px] pb-[10px] px-[10px] md:px-0 leading-relaxed text-balance">
                 See how our AI Treatment Coordinator handles enquiries, answers finance questions, and filters for budget suitability before your staff ever lifts a finger.
               </p>
             </div>
             
             {/* Responsive placeholder for Loom video */}
-            <div className="md:col-span-3 w-full aspect-video md:aspect-auto md:h-64 lg:h-80 bg-gray-100 border border-gray-200 flex flex-col items-center justify-center relative">
+            <div className="md:col-span-3 w-full aspect-video md:aspect-auto md:h-[400px] lg:h-[500px] bg-gray-100 border border-gray-200 flex flex-col items-center justify-center relative rounded-xl overflow-hidden shadow-sm">
               <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#00674F] flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
                 <div className="w-0 h-0 border-t-[8px] sm:border-t-[10px] border-t-transparent border-l-[12px] sm:border-l-[16px] border-l-white border-b-[8px] sm:border-b-[10px] border-b-transparent ml-1"></div>
               </div>
@@ -68,34 +68,34 @@ export default function Page() {
         </section>
 
         {/* SECTION 3: THE "AGENCY TRAUMA" ANTIDOTE (The 3 Pillars) */}
-        <section id="why-us" className="scroll-mt-[60px] bg-[#00674F] text-white pt-[80px] pb-[80px] px-6 sm:px-8 h-[600px] flex flex-col justify-center">
-          <div className="max-w-5xl mx-auto flex flex-col md:grid md:grid-cols-3 gap-8 md:gap-6">
+        <section id="why-us" className="scroll-mt-[60px] bg-[#00674F] text-white pt-[80px] md:pt-32 pb-[80px] md:pb-32 lg:pt-40 lg:pb-40 px-6 sm:px-8 h-[600px] md:h-auto flex flex-col justify-center">
+          <div className="max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
             {/* Pillar 1 */}
-            <div className="border-l border-white/20 pl-4 md:pl-5">
-              <h3 className="text-[22px] font-bold uppercase tracking-wider mb-2 sm:mb-3 text-white/90 leading-tight">
+            <div className="border-l border-white/20 pl-4 md:pl-6 lg:pl-8">
+              <h3 className="text-[22px] md:text-2xl lg:text-3xl font-bold uppercase tracking-wider mb-2 sm:mb-3 md:mb-5 text-white/90 leading-tight">
                 Instant Response
               </h3>
-              <p className="text-[16px] pr-[20px] leading-relaxed opacity-80">
+              <p className="text-[16px] md:text-lg lg:text-xl pr-[20px] md:pr-0 leading-relaxed opacity-80">
                 24/7 Screening via WhatsApp. Capture high-intent prospects right when they enquire, not just during standard office hours.
               </p>
             </div>
             
             {/* Pillar 2 */}
-            <div className="border-l border-white/20 pl-4 md:pl-5">
-              <h3 className="text-[22px] font-bold uppercase tracking-wider mb-2 sm:mb-3 text-white/90 leading-tight">
+            <div className="border-l border-white/20 pl-4 md:pl-6 lg:pl-8">
+              <h3 className="text-[22px] md:text-2xl lg:text-3xl font-bold uppercase tracking-wider mb-2 sm:mb-3 md:mb-5 text-white/90 leading-tight">
                 Protected Capacity
               </h3>
-              <p className="text-[16px] pr-[20px] leading-relaxed opacity-80">
+              <p className="text-[16px] md:text-lg lg:text-xl pr-[20px] md:pr-0 leading-relaxed opacity-80">
                 Staff are only alerted when a high-value prospect is qualified and ready to book. No more chasing dead leads.
               </p>
             </div>
 
             {/* Pillar 3 */}
-            <div className="border-l border-white/20 pl-4 md:pl-5">
-              <h3 className="text-[22px] font-bold uppercase tracking-wider mb-2 sm:mb-3 text-white/90 leading-tight">
+            <div className="border-l border-white/20 pl-4 md:pl-6 lg:pl-8">
+              <h3 className="text-[22px] md:text-2xl lg:text-3xl font-bold uppercase tracking-wider mb-2 sm:mb-3 md:mb-5 text-white/90 leading-tight">
                 Revenue Visibility
               </h3>
-              <p className="text-[16px] pr-[20px] leading-relaxed opacity-80">
+              <p className="text-[16px] md:text-lg lg:text-xl pr-[20px] md:pr-0 leading-relaxed opacity-80">
                 Complete CRM pipeline tracking from initial click to clinical treatment value. No more marketing guesswork.
               </p>
             </div>
@@ -103,17 +103,17 @@ export default function Page() {
         </section>
 
         {/* SECTION 4: THE BOOKING MECHANISM */}
-        <section id="audit" className="scroll-mt-[60px] bg-white pt-[64px] pb-20 px-6 sm:px-8 flex flex-col">
-          <div className="max-w-5xl mx-auto w-full flex flex-col md:flex-row gap-10 items-center">
-            <div className="w-full md:w-1/3 text-center md:text-left">
-              <h2 className="text-[32px] font-bold mb-3 sm:mb-4 text-black text-balance leading-tight">
+        <section id="audit" className="scroll-mt-[60px] bg-white pt-[64px] md:pt-32 pb-20 md:pb-32 lg:pt-40 lg:pb-40 px-6 sm:px-8 flex flex-col">
+          <div className="max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto w-full flex flex-col md:flex-row gap-10 lg:gap-16 items-center">
+            <div className="w-full md:w-[40%] text-center md:text-left">
+              <h2 className="text-[32px] md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 text-black text-balance leading-tight">
                 Protect Your Clinic&apos;s Capacity
               </h2>
-              <p className="text-[16px] text-black pt-[15px] px-[15px] leading-relaxed text-balance">
+              <p className="text-[16px] md:text-lg lg:text-xl text-black pt-[15px] px-[15px] md:px-0 leading-relaxed text-balance">
                 Book a 15-minute audit to see if the Aria Clinical framework fits your practice.
               </p>
             </div>
-            <div className="w-full md:flex-1 min-h-[300px] md:h-[400px] bg-gray-50 border border-dashed border-gray-300 flex items-center justify-center text-gray-400 uppercase tracking-widest text-[10px] sm:text-xs font-bold text-center px-4">
+            <div className="w-full md:w-[60%] min-h-[300px] md:h-[450px] lg:h-[550px] bg-gray-50 border border-dashed border-gray-300 flex items-center justify-center text-gray-400 uppercase tracking-widest text-[10px] sm:text-xs md:text-sm font-bold text-center px-4 rounded-xl shadow-sm">
               Calendly / GoHighLevel Scheduler Placeholder
             </div>
           </div>

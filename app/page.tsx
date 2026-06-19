@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Page() {
   return (
-    <div className="min-h-[100dvh] bg-[#00674F] flex flex-col">
+    <div className="flex flex-col min-h-[100dvh] bg-white">
       {/* FIXED HEADER */}
       <header className="fixed top-0 w-full z-50 bg-[#00674F] border-b border-emerald-800/50 flex items-center justify-between px-6 sm:px-8 h-[60px] shadow-sm">
         <div className="flex items-center gap-3">
@@ -17,7 +17,7 @@ export default function Page() {
         </nav>
       </header>
 
-      <main className="pt-[60px] bg-[#00674F] flex-grow">
+      <main className="pt-[60px] flex-1 bg-white">
         {/* SECTION 1: THE ABOVE-THE-FOLD HOOK (Hero Section) */}
         <section className="bg-[#00674F] text-white pt-[80px] pb-[90px] md:pt-32 md:pb-32 lg:pt-40 lg:pb-40 h-[590px] md:h-auto px-6 sm:px-8 flex flex-col justify-center text-center">
           <div className="max-w-4xl lg:max-w-5xl mx-auto">

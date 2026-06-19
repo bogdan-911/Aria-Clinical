@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from 'next/link';
 
 export default function Page() {
@@ -7,19 +6,8 @@ export default function Page() {
       {/* 2. FIXED HEADER */}
       <header className="fixed top-0 w-full z-50 bg-[#00674F] border-b border-emerald-800/50 flex items-center justify-between px-6 sm:px-8 h-[60px] shadow-sm">
         <div className="flex items-center gap-3">
-          
-          {/* LOGO INSERTED HERE */}
-          <Image 
-            src="/logo.png" 
-            alt="Aria Clinical Logo" 
-            width={32} 
-            height={32} 
-            className="w-8 h-8 object-contain"
-            priority
-          />
-          
-          <span className="font-bold tracking-tight text-lg uppercase hidden sm:block text-white">
-            ARIA CLINICAL
+          <span className="font-light tracking-widest text-xl text-white">
+            ΛRIΛ
           </span>
         </div>
         <nav className="flex items-center gap-4 sm:gap-8 text-xs sm:text-sm font-medium uppercase tracking-widest text-white">
@@ -31,7 +19,7 @@ export default function Page() {
 
       <main className="pt-[60px] bg-[#00674F]">
         {/* 3. SECTION 1: THE ABOVE-THE-FOLD HOOK (Hero Section) */}
-        <section className="bg-[#00674F] text-white py-20 sm:py-24 px-6 sm:px-8 flex flex-col justify-center text-center">
+        <section className="bg-[#00674F] text-white py-32 sm:py-40 lg:py-48 px-6 sm:px-8 flex flex-col justify-center text-center">
           <div className="max-w-4xl mx-auto">
             <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] font-semibold mb-3 sm:mb-4 opacity-80">
             </p>

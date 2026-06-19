@@ -1,0 +1,6 @@
+{
+  "name": "Aria Clinical Landing Page",
+  "description": "A single-page, mobile-first landing page for Aria Clinical, featuring an AI-driven patient intake system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

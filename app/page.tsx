@@ -49,7 +49,7 @@ export default function Page() {
                 href="#demo"
                 className="inline-block bg-white text-[#00674F] text-xs sm:text-sm font-bold px-6 py-3 uppercase tracking-tighter hover:bg-gray-100 transition-colors"
               >
-                [ Watch the AI Demo ]
+                 Watch the AI Demo 
               </a>
             </div>
           </div>

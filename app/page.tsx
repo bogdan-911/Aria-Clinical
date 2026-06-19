@@ -17,9 +17,9 @@ export default function Page() {
         </nav>
       </header>
 
-      <main className="pt-[60px] flex-1 bg-white">
+      <main className="flex-1 bg-white">
         {/* SECTION 1: THE ABOVE-THE-FOLD HOOK (Hero Section) */}
-        <section className="bg-[#00674F] text-white pt-[80px] pb-[90px] md:pt-32 md:pb-32 lg:pt-40 lg:pb-40 h-[590px] md:h-auto px-6 sm:px-8 flex flex-col justify-center text-center">
+        <section className="bg-[#00674F] text-white pt-[140px] pb-[90px] md:pt-[188px] md:pb-32 lg:pt-[220px] lg:pb-40 h-[650px] md:h-auto px-6 sm:px-8 flex flex-col justify-center text-center">
           <div className="max-w-4xl lg:max-w-5xl mx-auto">
             <p className="text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.3em] font-semibold mb-3 sm:mb-4 opacity-80">
             </p>
